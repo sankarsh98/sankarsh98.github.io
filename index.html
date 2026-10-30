@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sankarsh: notes and courses</title>
+  <meta name="description" content="Personal notes and hands-on mini-courses on AI, systems and chess.">
+  <style>
+    :root { --bg:#faf8f8; --fg:#2b2b2b; --muted:#5b5b5b; --card:#fff; --line:#e5e5e5; --accent:#284b63; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#161618; --fg:#ebebec; --muted:#a8a8ab; --card:#1f1f22; --line:#393639; --accent:#7b97aa; }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--fg);
+           font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 20px 80px; }
+    h1 { font-size: 2rem; margin: 0 0 6px; }
+    .lead { color: var(--muted); margin: 0 0 36px; }
+    .grid { display: grid; gap: 16px; }
+    a.card { display:block; padding:20px 22px; background:var(--card); border:1px solid var(--line);
+             border-radius:12px; color:inherit; text-decoration:none; }
+    a.card:hover, a.card:focus-visible { border-color: var(--accent); outline: none; }
+    .card h2 { margin:0 0 4px; font-size:1.15rem; color: var(--accent); }
+    .card p { margin:0; color: var(--muted); font-size: .95rem; }
+    .tag { display:inline-block; margin-top:10px; font-size:.78rem; color:var(--muted);
+           border:1px solid var(--line); border-radius:999px; padding:1px 10px; }
+    footer { margin-top: 40px; color: var(--muted); font-size: .85rem; }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Notes and courses</h1>
+  <p class="lead">A personal knowledge garden and three hands-on mini-courses. Each course has code you can run.</p>
+
+  <div class="grid">
+    <a class="card" href="https://sankarsh98.github.io/garden/">
+      <h2>Thoughts: the notes garden</h2>
+      <p>Backend and data engineering, system design, LLMs, chess and Vedic astrology, published from an Obsidian vault.</p>
+      <span class="tag">Quartz</span>
+    </a>
+    <a class="card" href="https://sankarsh98.github.io/chess-brains/">
+      <h2>How Computers Play Chess</h2>
+      <p>Build a tiny alpha-beta chess engine, then see how Stockfish, AlphaZero and language models relate to it.</p>
+      <span class="tag">MkDocs Material</span>
+    </a>
+    <a class="card" href="https://sankarsh98.github.io/ai-systems/">
+      <h2>AI Systems</h2>
+      <p>Agents, tool use and MCP, plus inference efficiency: KV cache, quantization and speculative decoding.</p>
+      <span class="tag">Docusaurus</span>
+    </a>
+  </div>
+
+  <footer>Source for each site lives on <a href="https://github.com/sankarsh98">GitHub</a>.</footer>
+</main>
+</body>
+</html>
